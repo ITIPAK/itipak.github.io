@@ -1,0 +1,79 @@
+.jquerycssmenu {
+	background: #ccc;
+	height:25px;
+	border-top: 5px solid #0099FF;
+	border-bottom: 5px solid #0099FF;
+	padding: 0px 0px 0 20px;
+	z-index:10;
+}
+.jquerycssmenu ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.jquerycssmenu ul li {
+	position: relative;
+	display: inline;
+	float: left;
+}
+.jquerycssmenu ul li a {
+	display: block;
+	padding: 1px 15px 3px 4px;
+	margin-right: 3px;
+	border: 1px solid #ccc;
+	border-bottom-width: 0;
+	color: #000;
+	text-decoration: none;
+	background-color: #ccc;
+}
+.jquerycssmenu ul li a:hover {
+	background: #666666;
+	color: #FFFFFF;
+}
+.jquerycssmenu ul li ul {
+	position: absolute;
+	left: 0;
+	display: block;
+	visibility: hidden;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+}
+.jquerycssmenu ul li ul li {
+	display: list-item;
+	float: none;
+}
+.jquerycssmenu ul li ul li ul {
+	top: 0;
+}
+.jquerycssmenu ul li ul li a {
+	width: 160px;
+	background: white;
+	color: black;
+	padding: 4px 5px;
+	margin: 0;
+	border-top-width: 0;
+	border-top: 1px solid #ccc;
+}
+.jquerycssmenu ul li ul li a:hover {
+	background: #666666;
+	color: #fff;
+}
+.downarrowclass {
+	position: absolute;
+	top: 11px;
+	right: 10px;
+}
+.rightarrowclass {
+	position: absolute;
+	top: 8px;
+	right: 5px;
+}
+*:first-child+html .jquerycssmenu {
+	height: 1%;
+}
+* html .jquerycssmenu{
+	height: 1%;
+}
+* html .jquerycssmenu ul li ul li a {
+	display: inline-block;
+}
